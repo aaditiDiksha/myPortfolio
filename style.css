@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap");
 body {
   background: black;
- 
 }
 h1,
 h2,
@@ -13,7 +12,7 @@ li {
 }
 
 .ref:link,
-.ref:visited{
+.ref:visited {
   border-radius: 8%;
   background-color: #f44336;
   color: white;
@@ -46,20 +45,18 @@ li {
   width: 40vw;
   padding: 2rem;
 }
-.right img{
+.right img {
   /* height: 10rem;
   width: 10rem; */
-    max-width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
 }
 .intro h2 {
   margin: 0.5rem 0;
 }
-.intro a{
-  
+.intro a {
   margin-top: 1rem;
- 
 }
 .sub-title {
   height: 15vh;
@@ -68,21 +65,21 @@ li {
 }
 
 /* ---------------ABOUT---------------- */
-.about{
+.about {
   display: flex;
   flex-direction: column;
   height: 90vh;
 
   background-color: #181823;
   margin: 2rem 1rem;
-  padding: 4rem 0; 
-   color: wheat;
+  padding: 4rem 0;
+  color: wheat;
   text-align: center;
 }
-.about h2{
+.about h2 {
   color: #c7453c;
 }
-.about p{
+.about p {
   font-size: 1.3rem;
 }
 /* ---------------------------- SKILLS ------------------------------------- */
@@ -133,7 +130,7 @@ li {
 .projects {
   display: flex;
   flex-direction: column;
-  color:wheat;
+  color: wheat;
   background-color: #181823;
   margin: 2rem 1rem;
   padding: 4rem 0rem;
@@ -175,16 +172,15 @@ li {
   padding: 0 0 5px 3px;
 }
 
-
 .code-link {
   height: 2vh;
 }
-.webflow{
+.webflow {
   color: #c7453c;
   text-decoration: none;
 }
 /* ------------------CONTACT------------------ */
-.contact{
+.contact {
   color: wheat;
   display: flex;
   flex-direction: column;
@@ -192,10 +188,11 @@ li {
   height: 60vh;
   padding: 2rem 0;
 }
-.contact h2, h3, h4{
+.contact h2,
+h3,
+h4 {
   margin: 1.5rem 0;
 }
-
 
 /* ----------------------- CONTACT OVER -------------------- */
 
@@ -212,140 +209,126 @@ footer ul li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 35px;
-  font-family: "Sen", sans-serif;;
+  font-family: "Sen", sans-serif;
   /* grid-template-rows: repeat(); */
 }
 .footer-item {
   text-decoration: none;
   color: wheat;
 }
-.footer-item:hover{
+.footer-item:hover {
   color: #c7453c;
 }
 
-
-
 @media (max-width: 770px) {
-  .navbar button{
+  .navbar button {
     padding: 1rem 0;
   }
-  .ham-icon{
+  .ham-icon {
     color: #c7453c;
   }
-  .intro{
+  .intro {
     display: block;
     padding-top: 0%;
     height: 80vh;
     margin-top: 3rem;
   }
-.left{
-  margin: 0%;
-}
-  .right{
-    margin-left: 2.9rem;
-    padding: 2rem 0rem;
-    padding-top: 3rem;
+  .left {
+    margin: 0%;
   }
-  .right img{
-    border-radius: 15%;
+  .right {
+    display: none;
   }
-  .about{
-        height: 105vh;
+  .about {
+    height: 105vh;
     padding-bottom: 0;
     padding-top: 0;
   }
-  .sub-title{
+  .sub-title {
     padding: 1rem;
   }
-  .description{
+  .description {
     padding: 1rem;
   }
-  .skills h3{
+  .skills h3 {
     height: 8vh;
   }
-  .skills-item-container{
+  .skills-item-container {
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .skills-item div{
+  .skills-item div {
     margin: 1rem;
   }
-  
-  .skills-item{
+
+  .skills-item {
     margin: 0%;
   }
-  .projects{
+  .projects {
     padding: 0;
     padding-bottom: 4rem;
   }
-  .single-project{
+  .single-project {
     height: 120vh;
     grid-template-columns: 100%;
-    grid-template-columns: minmax(min-content,max-content);
+    grid-template-columns: minmax(min-content, max-content);
     margin: 0;
   }
- #note{
-   height: 133vh;
- }
-  #smart{
-   height: 110vh;
- }
-  #robot{
-   height: 105vh;
- }
-  #portfolio{
-   height: 90vh;
- }
-  .about-project, .project-display{
-    padding: 0%;
-    
+  #note {
+    height: 133vh;
   }
-  .note{
+  #smart {
+    height: 110vh;
+  }
+  #robot {
+    height: 105vh;
+  }
+  #portfolio {
     height: 90vh;
   }
-   .smart{
+  .about-project,
+  .project-display {
+    padding: 0%;
+  }
+  .note {
+    height: 90vh;
+  }
+  .smart {
     height: 70vh;
   }
-   .robot{
+  .robot {
     height: 50vh;
   }
-   .portfolio{
+  .portfolio {
     height: 50vh;
   }
-  .project-display{
-     grid-template-rows: 68% 32%;
-     
-     
-    grid-template-columns: minmax(min-content,max-content);
+  .project-display {
+    grid-template-rows: 68% 32%;
 
+    grid-template-columns: minmax(min-content, max-content);
   }
-  .project-caption{
+  .project-caption {
     margin: auto;
   }
-  .project-img{
+  .project-img {
     width: 91vw;
     height: auto;
   }
-  .about-project h2{
+  .about-project h2 {
     text-align: center;
     margin-top: 6rem;
   }
-  .about-project h5{
+  .about-project h5 {
     margin: 1rem 1rem;
   }
-  .about-project p{
+  .about-project p {
     margin: 1rem;
   }
-  .contact{
+  .contact {
     text-align: center;
   }
   .footer {
     padding-bottom: 40px;
     text-align: center;
   }
-  
-  
-  
 }
-
-
