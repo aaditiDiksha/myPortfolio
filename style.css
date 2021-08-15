@@ -9,6 +9,7 @@ h3,
 p,
 li {
   font-family: "Sen", sans-serif;
+  margin: 0%;
 }
 
 .ref:link,
@@ -43,7 +44,14 @@ li {
 }
 .right {
   width: 40vw;
-  margin: 6rem 0;
+  padding: 2rem;
+}
+.right img{
+  /* height: 10rem;
+  width: 10rem; */
+    max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 .intro h2 {
   margin: 0.5rem 0;
@@ -128,7 +136,7 @@ li {
   color:wheat;
   background-color: #181823;
   margin: 2rem 1rem;
-  padding-top: 4rem;
+  padding: 4rem 0rem;
 }
 .single-project {
   display: grid;
@@ -229,8 +237,17 @@ footer ul li {
     padding-top: 0%;
     height: 80vh;
   }
-
-  .right{display: none;}
+.left{
+  margin: 0%;
+}
+  .right{
+    margin-left: 2.9rem;
+    padding: 2rem 0rem;
+    padding-top: 3rem;
+  }
+  .right img{
+    border-radius: 15%;
+  }
   .about{
         height: 105vh;
     padding-bottom: 0;
@@ -258,10 +275,12 @@ footer ul li {
   }
   .projects{
     padding: 0;
+    padding-bottom: 4rem;
   }
   .single-project{
     height: 120vh;
     grid-template-columns: 100%;
+    grid-template-columns: minmax(min-content,max-content);
     margin: 0;
   }
  #note{
@@ -293,7 +312,11 @@ footer ul li {
     height: 50vh;
   }
   .project-display{
-    grid-template-rows: 68% 32%;
+     grid-template-rows: 68% 32%;
+     
+     
+    grid-template-columns: minmax(min-content,max-content);
+
   }
   .project-caption{
     margin: auto;
